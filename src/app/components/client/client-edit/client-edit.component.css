@@ -1,0 +1,65 @@
+table {
+  width: 100%;
+  align-items: left;
+}
+
+button.add {
+  width: 100%;
+
+}
+
+button {
+  margin: 12px;
+}
+
+p{
+  align-items: left;
+}
+
+.table {
+  width: 100%;
+  align-items: left;
+}
+
+
+.mat-column-id{
+  text-align: left;
+  width: 5%;
+}
+
+.mat-column-name{
+  text-align: left;
+  width: 20%;
+}
+
+.mat-column-url{
+  text-align: left;
+  width: 10%;
+}
+
+
+.mat-column-delete{
+  text-align: center;
+  width: auto;
+  width: 2%;
+}
+
+.mat-column-edit{
+  text-align: center;
+  width: auto;
+  width: 2%;
+}
+
+
+.edit-course-form {
+  min-width: 300px;
+}
+
+.mat-form-field {
+    display: block;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}

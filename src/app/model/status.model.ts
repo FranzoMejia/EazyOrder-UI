@@ -1,0 +1,5 @@
+export enum Status {
+  CREATED , PREPARED, SEND, DELIVERED ,CLOSED, CANCELLED
+
+
+}

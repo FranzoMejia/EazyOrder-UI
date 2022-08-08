@@ -1,0 +1,94 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<app-header></app-header>
+
+<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+      No.
+    </th>
+    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+  </ng-container>
+
+  <!-- Client Column -->
+  <ng-container matColumnDef="client">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header >
+      Client
+    </th>
+    <td mat-cell *matCellDef="let element"> {{element.client.name}} </td>
+  </ng-container>
+
+  <!-- Price Column -->
+  <ng-container matColumnDef="price">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+      Price
+    </th>
+    <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+  </ng-container>
+
+  <!-- createdDt Column -->
+  <ng-container matColumnDef="createdDt">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+      Created
+    </th>
+    <td mat-cell *matCellDef="let element"> {{formatDate(element.createdDt)}} </td>
+  </ng-container>
+
+  <!-- closedDt Column -->
+  <ng-container matColumnDef="closedDt">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+      Closed
+    </th>
+    <td mat-cell *matCellDef="let element"> {{formatDate(element.closedDt)}} </td>
+  </ng-container>
+
+    <!-- closedDt Column -->
+    <ng-container matColumnDef="cancelledDt">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        Cancelled
+      </th>
+      <td mat-cell *matCellDef="let element"> {{formatDate(element.cancelledDt)}} </td>
+    </ng-container>
+
+
+
+
+
+
+   <!-- Status Column -->
+   <ng-container matColumnDef="status">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+      Status
+    </th>
+    <td mat-cell *matCellDef="let element">
+
+<button mat-icon-button [class]="isDisabled(element.status,'CLOSED')"  #CLOSED>
+  <mat-icon  style="cursor: pointer;" >done_all</mat-icon>
+</button>
+<button mat-icon-button  [class]="isDisabled(element.status,'CANCELLED')" #CANCELLED>
+  <mat-icon  style="cursor: pointer;" >cancel</mat-icon>
+</button>
+
+
+      <!--{{element.status}}-->
+    </td>
+  </ng-container>
+
+
+
+
+  <ng-container matColumnDef="edit">
+    <th mat-header-cell  *matHeaderCellDef >  </th>
+    <td mat-cell *matCellDef="let element" >
+      <button mat-button [routerLink]="['/addorder',element.id]" >
+        <mat-icon>info</mat-icon>
+    </button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+

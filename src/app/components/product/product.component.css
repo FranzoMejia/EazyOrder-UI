@@ -1,0 +1,47 @@
+button {
+  width: 100%;
+
+}
+table {
+  width: 100%;
+  align-items: left;
+}
+
+.table {
+  width: 100%;
+  align-items: left;
+}
+
+
+.mat-column-id{
+  text-align: left;
+  width: 5%;
+}
+
+.mat-column-name{
+  text-align: left;
+  width: 20%;
+}
+
+.mat-column-description{
+  text-align: left;
+  width: 50%;
+}
+
+.mat-column-price{
+  text-align: right;
+  width: 5%;
+}
+
+.mat-column-delete{
+  text-align: center;
+  width: auto;
+  width: 2%;
+}
+
+.mat-column-edit{
+  text-align: center;
+  width: auto;
+  width: 2%;
+}
+

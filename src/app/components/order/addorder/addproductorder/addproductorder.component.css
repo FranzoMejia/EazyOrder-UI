@@ -1,0 +1,21 @@
+.edit-course-form {
+  min-width: 300px;
+}
+
+.mat-form-field {
+width: 100%;
+}
+
+.mat-form-field-product{
+  width: 80%;
+  }
+
+  .mat-form-field-qty{
+    width: 20%;
+    }
+
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}

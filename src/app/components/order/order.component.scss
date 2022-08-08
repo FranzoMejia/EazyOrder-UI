@@ -1,0 +1,70 @@
+.button-add {
+  width: 100%;
+}
+
+.mat-icon-button{
+  width: 25px;
+  color: lightseagreen;
+
+}
+
+.mat-icon-button.disabled{
+  width: 25px;
+  color : #c0c0c0;
+}
+
+.mat-button{
+  width: 100%;
+}
+table {
+  width: 100%;
+  align-items: left;
+}
+
+.table {
+  width: 100%;
+  align-items: left;
+}
+
+
+.mat-column-id{
+  text-align: left;
+  width: 5%;
+}
+
+.mat-column-client{
+  text-align: left;
+  width: 20%;
+}
+
+.mat-column-price{
+  text-align: left;
+  width: 10%;
+}
+
+.mat-column-address{
+  text-align: left;
+  width: 15%;
+}
+.mat-column-comments{
+  text-align: left;
+  width: auto;
+  width: 20%;
+}
+.mat-column-cellphone{
+  text-align: left;
+  width: auto;
+  width: 5%;
+}
+
+.mat-column-status{
+  text-align: left;
+  width: auto;
+  width: 20%;
+}
+
+.mat-column-edit{
+  text-align: center;
+  width: auto;
+  width: 10%;
+}

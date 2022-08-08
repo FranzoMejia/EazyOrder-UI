@@ -1,0 +1,68 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<app-header></app-header>
+<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by id">
+      No.
+    </th>
+    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by name">
+      Name
+    </th>
+    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="phone">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by description">
+      Phone
+    </th>
+    <td mat-cell *matCellDef="let element"> {{element.phone}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="address">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by price">
+      Address
+    </th>
+    <td mat-cell *matCellDef="let element">
+
+      <ul>
+        <li *ngFor="let item of element.addresses">
+          <a href={{item.url}}>{{item.name}}</a>
+        </li>
+      </ul>
+
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="delete">
+    <th mat-header-cell  *matHeaderCellDef >  </th>
+    <td mat-cell *matCellDef="let element" >
+      <button mat-button (click)="onClickDelete(element)">
+        <mat-icon>delete</mat-icon>
+    </button>
+    </td>
+  </ng-container>
+  <ng-container matColumnDef="edit">
+    <th mat-header-cell  *matHeaderCellDef >  </th>
+    <td mat-cell *matCellDef="let element" >
+      <button mat-button [routerLink]="['/clientedit',element.id]" >
+        <mat-icon>edit</mat-icon>
+    </button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+<button mat-button [routerLink]="['/clientedit',0]" class="add">
+  <mat-icon>add</mat-icon>
+</button>
+

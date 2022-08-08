@@ -1,0 +1,53 @@
+.heading-21921 {
+  position: relative;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  line-height: 1;
+  font-weight: 900 !important;
+  text-align: left;
+}
+
+.site-section {
+  padding: 3rem 0;
+}
+
+label {
+  font-size: 1rem;
+  text-align: left;
+  display: flex;
+}
+
+
+.option-buttons {
+  margin-top: 10px;
+  text-align: left;
+
+}
+
+.option-buttons button{
+  margin-right: 5px;
+}
+
+.course-details-form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.course-type {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+mat-radio-button{
+  margin-right: 5px;
+}
+
+.mat-form-field {
+  display: block;
+  position: relative;
+  flex: auto;
+  min-width: 300px;
+
+}
+

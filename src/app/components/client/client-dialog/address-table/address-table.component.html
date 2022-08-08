@@ -1,0 +1,24 @@
+<p>address-table works! {{childMessage}}</p>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<table mat-table [dataSource]="childMessage" matSort class="mat-elevation-z8">
+  <ng-container matColumnDef="delete">
+    <th mat-header-cell  *matHeaderCellDef >  </th>
+    <td mat-cell *matCellDef="let element" >
+      <button mat-button (click)="onClickDelete(element)">
+        <mat-icon>delete</mat-icon>
+    </button>
+    </td>
+  </ng-container>
+  <ng-container matColumnDef="edit">
+    <th mat-header-cell  *matHeaderCellDef >  </th>
+    <td mat-cell *matCellDef="let element" >
+      <button mat-button (click)="onClickEdit(element)">
+        <mat-icon>edit</mat-icon>
+    </button>
+    </td>
+  </ng-container>
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+

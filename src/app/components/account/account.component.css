@@ -1,0 +1,29 @@
+.heading-21921 {
+  position: relative;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  line-height: 1;
+  font-weight: 900 !important;
+  text-align: left;
+}
+
+.site-section {
+  padding: 3rem 0;
+}
+
+label {
+  font-size: 1rem;
+  text-align: left;
+  display: flex;
+}
+
+
+.option-buttons {
+  margin-top: 10px;
+  text-align: left;
+
+}
+
+.option-buttons button{
+  margin-right: 5px;
+}

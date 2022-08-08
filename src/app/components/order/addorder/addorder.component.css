@@ -1,0 +1,63 @@
+mat-grid-tile {
+  justify-content: center;
+}
+.statistics-grid {
+  margin-bottom: 18px;
+
+}
+
+
+.statistics {
+  justify-content: center;
+}
+ .mat-form-field{
+  width: 90%;
+  text-align: left;
+ }
+
+ .mat-dialog-content{
+  text-align: left;
+ }
+
+ .mat-column-name{
+  text-align: left;
+  width: 70%;
+}
+
+ .mat-column-qty{
+  text-align: left;
+  width: 10%;
+}
+
+.mat-column-price{
+  text-align: right;
+  width: 10%;
+}
+
+
+
+.mat-column-description{
+  text-align: left;
+  width: 50%;
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.disabled{
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.text-area-input
+{
+  min-height: 200px;
+}
